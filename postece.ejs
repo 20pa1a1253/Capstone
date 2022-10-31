@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="ece" method="GET">
+    <h3>the students are</h3>
+    <% theece.forEach((lary)=>{ %>
+        <% var nam= JSON.stringify(lary.name)%>
+        <% var rol= JSON.stringify(lary.registerNumber)%>
+        <% var sem = JSON.stringify(lary.CurrentSemNumber)%>
+        <ul>Studentname:
+              <li><%- nam %></li>
+            <li><%- "RegisterNo:"+rol%></li>
+            <li><%- "Currentsem:"+sem%></li>
+        </ul>            
+    <% })%>
+    <% theece.forEach((vary)=>{ %>
+        <% var nam= JSON.stringify(vary.name)%>
+        <% var rol= JSON.stringify(vary.registerNumber)%>
+        <% var sem = JSON.stringify(vary.CurrentSemNumber)%>
+        <ul>Studentname:
+              <li><%- nam %></li>
+            <li><%- "RegisterNo:"+rol%></li>
+            <li><%- "Currentsem:"+sem%></li>
+        </ul>            
+    <% })%>
+    
+    
+      
+    </form>
+</body>
+</html>

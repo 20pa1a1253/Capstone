@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            display: flex;
+            background-image: url('https://www.uwindsor.ca/education/sites/uwindsor.ca.education/files/styles/uwindsor_carousel/public/carousel-thank-you-teachers.jpg?itok=CnqkyQQk');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            justify-content: center;
+            padding:80px 80px 0px 0px;
+            border: 30px;
+
+
+        }
+        
+        
+    
+        
+        </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <form action="postmark" method="GET">
+    <div class="text">
+        <h1 style="color: white; padding-top: 80px;">POST STUDENT MARKS</h1>
+        <a style="color: white;"> Studentname :  <input type="text" name="stud_name"> </a><br>
+        <a style="color: white; ">RegisterNo: <input type="text" name="rol_no" ></a> <br>
+        <a style="color: white; ">BranchName</a>: <input type="text" name="branch" ></a> <br>
+        <a style="color: white; ">CurrentSemisterNumber: <input type="text" name="semnum"></a> <br>
+        <a style="color: white;  ">C.G.P.A: <input type="password" name="cgpa"></a> <br>
+        <a style="color: white; ">Attendence:<input type="text" name="attendence"  ></a><br>
+        <a style="color: white;  ">Remarks:<input type="text" name="remarks"></a><br>
+        <button type="submit" class="btn btn-primary">POST</button>
+    </div>
+</form>
+  
+
+
+<%- include('footer') -%>

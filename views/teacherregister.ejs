@@ -1,0 +1,117 @@
+<html>
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <style>
+    .container{
+      display:flex;
+      justify-content: center;
+      padding-top: 50px;
+      padding-left: 250px;
+      color: white;
+    }
+  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management Registration Form</title>
+
+</head>
+ 
+<body style="background-image:url('https://i.pinimg.com/736x/a5/ac/39/a5ac39208e194af13bd1987d65686d03.jpg');background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;;">
+<div class="container">
+  
+  <form action="/teacherregistr" method="GET">
+    <h3>STUDENT REGISTRATION FORM</h3>
+    
+    <table align="center" cellpadding = "10">
+    <!----- First Name ---------------------------------------------------------->
+    <tr>
+      <td style="color: white;"><b>FIRST NAME</b></td>
+      <td style="color: white;"><input type="text" name="First_Name" required minlength="4" maxlength="30"/>
+        (max 30 characters a-z and A-Z)
+      </td>
+    </tr>
+    <tr>
+      <td style="color: white;"><b>LAST NAME</b></td>
+      <td style="color: white;"><input type="text" name="Last_Name" required minlength="1"maxlength="30"/>
+        (max 30 characters a-z and A-Z)
+      </td>
+    </tr>
+    
+    <tr style="color: white;">
+      <td><b>YOUR Id</b></td>
+      <td><input type="text" name="RegId" required maxlength="11" />
+      
+      </td>
+    </tr>
+    <!----- Email Id ---------------------------------------------------------->
+    <tr style="color: white;">
+      <td><b>EMAIL ID</b></td>
+      <td><input type="text" name="Email_Id" required minlength="4" maxlength="100" /></td>
+    </tr>
+    <!----- Mobile Number ---------------------------------------------------------->
+    <tr style="color: white;">
+      <td><b>MOBILE NUMBER</b></td>
+      <td>
+      <input type="text" name="Mobile_Number"required minlength="10" maxlength="10" />
+      (10 digit number)
+      </td>
+    </tr>
+    <tr style="color: white;">
+      <td><b>GENDER</b></td>
+      <td>
+      Male <input type="radio" name="Gender" value="Male" />
+      Female <input type="radio" name="Gender" value="Female" />
+      </td>
+    </tr>
+    <tr style="color: white;">
+      <td><b>BRANCH NAME</b></td>
+      <td><input type="text" name="branch"  required minlength="3"maxlength="3"/>
+        (CSE/ECE/CIVIL)
+      </td>
+    </tr>
+    <tr style="color: white;">
+      <td style="color: white;"><b>DESIGNATION in DEPARTMENT<br /></td>
+      <td><input type="text" name="Semno" required minlength="2"/>
+        (teacher/HOD)
+        </td>
+    </tr>
+    <tr style="color: white;">
+      <td style="color: white;"><b>NUMBER OF YEARS TAKEN</b></td>
+      <td><input type="number" name="Semno" required minlength="1"maxlength="1" />
+      (number)
+      </td>
+    </tr>
+    <tr style="color: white;">
+      <td style="color: white;"><b>YEARS OF EXPERIENCE</b></td>
+      <td><input type="number" name="Semno" required minlength="1"maxlength="2" />
+      (number)
+      </td>
+    </tr>
+    <tr style="color: white;">
+      <td style="color: white;"><b>QUALIFICATIONS </br></td>
+      <td><input type="text" name="Semno" required minlength="2"/>
+      
+        </td>
+    </tr>
+    <tr style="color: white;">
+      <td style="color: white;"><b>SALARY </b></td>
+      <td><input type="number" name="Semno" required minlength="4"/>
+        (number)
+        </td>
+    </tr>
+    <tr style="color: white;">
+      <td colspan="2" align="center">
+      <b><input type="submit" class="btn btn-primary" value="Submit"></b>
+      </td>
+    </tr>
+    </table>
+  </form>
+</div>
+  
+ 
+</body>
+</html>

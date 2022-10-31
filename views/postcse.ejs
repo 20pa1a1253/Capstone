@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <style>
+    .container{
+    display:flex;
+    justify-content: center;
+    padding-top: 300px;
+    padding-bottom: 200px;
+    
+  }
+  </style>
+  
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body style="background-image: url('https://t3.ftcdn.net/jpg/04/98/28/00/360_F_498280089_dlnVBMtS9kfRC9xPtuzNxjsg2vtNIySz.jpg');background-position: center;
+background-repeat: no-repeat;
+background-size:cover;
+position: relative;">
+<form action="show" method="GET">
+<div class="container">
+    <h3 style="text-align: center;">the students are</h3>
+    <% thestudent.forEach((vary)=>{ %>
+        <% var nam= JSON.stringify(vary.name)%>
+        <% var rol= JSON.stringify(vary.registerNumber)%>
+        <% var sem = JSON.stringify(vary.CurrentSemNumber)%>
+        <ul>
+              <li><b><%-"Studentname:"+nam %></b></li>
+            <li><b><%- "RegisterNo:"+rol%></b></li>
+            <li><b><%- "Currentsem:"+sem%></b></li>
+        </ul>            
+    <% })%>
+    
+</div>   
+    </form>
+</body>
+</html>
